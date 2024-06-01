@@ -1,0 +1,279 @@
+:root {
+    --main-color: #76edd2;
+    --main-back: rgb(231, 231, 231) ;
+    --main-secondBack: rgb(61, 61, 61);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: var(--main-back);
+}
+
+
+/* header */
+
+header {
+    background-color: var(--main-back);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+}
+  
+header img {
+    width: 150px;
+    margin: 0;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+  
+header .containter-inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+}
+  
+header nav {
+    padding-right: 10px;
+}
+
+header a {
+    padding: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+}
+  
+header a:hover {
+   color: var(--main-color);
+}
+
+
+/* servicios */
+
+#servicios {
+    margin-top: 7vh;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/Atardecer.jpg);
+    color: white;
+}
+
+.serv-tittle{
+    font-size: 2.5rem;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-serv p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.2rem;
+}
+
+.container-Mariana{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.container-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.container-img {
+    width: 400px;
+    background-color: white;
+    box-shadow:  0  14px 28px rgba(0, 0, 0, .30);
+    border-radius: 20px;
+    
+}
+
+.container-img-texto {
+    text-align: center;
+    font-size: 20px;
+    padding: 1px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Carrusel */
+
+.container-text-productos{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.5rem;
+}
+
+.container-carrusel-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.conteiner-carrusel {
+    width: 300px;
+    height: 350px;
+    box-shadow: 0 8px 32px black;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: 25px;
+
+}
+.carrusel {
+   width: 300%;
+   height: 100%;
+  display: flex;
+}
+.slider-section {
+    width: calc(100% / 3); 
+    height: 100%;
+}
+.slider-section img{
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.btn-left, .btn-right {
+    display: flex;
+    position: absolute;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    transform: translate(0,-50);
+    transition: .8s ease;
+    user-select: none;
+   
+}
+
+.btn-left:hover, .btn-right:hover {
+    
+    box-shadow: 0 8px 50px black;
+}
+
+.btn-left{
+    left: 10px;
+}
+
+.btn-right{
+    right: 10px;
+}
+
+
+/* contact */
+
+.contact {
+    background-color: var(--main-secondBack);
+    height: 50vh;
+    color: var(--main-color);
+    
+}
+
+.contact-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact h2 {
+    padding: 36px;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.contact-mail {
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 0 5px 12px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    font-size: 1.8rem;
+}
+
+.contact-mail i{
+   padding: 10px;
+   color: white;
+}
+
+.contact-what {
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    box-shadow: 0 5px 12px black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    font-size: 1.8rem;
+}
+
+.contact-what i{
+   padding: 10px;
+   color: white;
+}
+
+
+.contact-ig {
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    box-shadow: 0 5px 12px black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    font-size: 1.8rem;
+}
+
+.contact-ig i{
+   padding: 10px;
+   color: white;
+}
+
+
